@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | A08 Bicycle Repair and Rental Shop</title>
+    <meta name="description" content="View bicycle repair and rental prices at A08 Cycle Hub.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>A08 Bicycle Repair and Rental Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+        </nav>
+    </header>
+    <main>
+        <section class="price-section">
+            <h2>Our Price List</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Normal Bicycle Rental</td>
+                    <td>Rental for one day</td>
+                    <td>₹100</td>
+                </tr>
+                <tr>
+                    <td>Mountain Bicycle Rental</td>
+                    <td>Rental for one day</td>
+                    <td>₹200</td>
+                </tr>
+                <tr>
+                    <td>Gear Bicycle Rental</td>
+                    <td>Rental for one day</td>
+                    <td>₹300</td>
+                </tr>
+                <tr>
+                    <td>Tyre Repair</td>
+                    <td>Basic tyre repair</td>
+                    <td>₹80</td>
+                </tr>
+                <tr>
+                    <td>Brake Repair</td>
+                    <td>Brake adjustment</td>
+                    <td>₹150</td>
+                </tr>
+                <tr>
+                    <td>General Servicing</td>
+                    <td>Complete bicycle check-up</td>
+                    <td>₹250</td>
+                </tr>
+            </table>
+        </section>
+        <section class="contact">
+            <h2>Book a Bicycle or Enquire</h2>
+            <p>Fill out the form and we will contact you.</p>
+            <form id="contactForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required
+                       placeholder="Enter your name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required
+                       placeholder="Enter your email">
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required
+                       pattern="[0-9]{10}"
+                       placeholder="10 digit phone number">
+                <br>
+                <label for="date">Rental Date:</label>
+                <input type="date" id="date" required>
+                <br>
+                <label for="quantity">Number of Bicycles:</label>
+                <input type="number" id="quantity"
+                       min="1" max="10" required>
+                <br>
+                <label for="service">Select Service:</label>
+                <select id="service" required>
+                    <option value="">Choose a service</option>
+                    <option value="Bicycle Rental">Bicycle Rental</option>
+                    <option value="Bicycle Repair">Bicycle Repair</option>
+                    <option value="General Servicing">General Servicing</option>
+                </select>
+                <br>
+                <br>
+                <button type="submit" class="btn">
+                    Submit Enquiry
+                </button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 A08 Bicycle Repair and Rental Shop. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
