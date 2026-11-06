@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A08 Bicycle Repair and Rental Shop</title>
+    <meta name="description" content="A08 Cycle Hub offers affordable bicycle repair and rental services.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>A08 Bicycle Repair and Rental Shop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Your Ride, Our Responsibility!</h2>
+            <p>
+                Welcome to A08 Bicycle Repair and Rental Shop. We provide affordable
+                bicycle repairs and rentals for everyone.
+            </p>
+            <a href="services.html" class="btn">Explore Services</a>
+        </section>
+        <!-- ABOUT SECTION -->
+        <section class="about">
+            <h2>About Us</h2>
+            <p>
+                A08 Bicycle Repair and Rental Shop is a bicycle repair and rental shop.
+                Our goal is to provide quality bicycle services
+                at affordable prices.
+            </p>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service-card">
+                    <h3>Bicycle Repair</h3>
+                    <p>We repair brakes, tyres, chains and gears.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Bicycle Rental</h3>
+                    <p>Rent a bicycle at affordable daily prices.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Bicycle Maintenance</h3>
+                    <p>Keep your bicycle clean and in good condition.</p>
+                </div>
+            </div>
+        </section>
+        <section class="calculator">
+            <h2>Bicycle Rental Calculator</h2>
+            <p>Calculate your estimated rental cost below.</p>
+            <form id="rentalForm">
+                <label for="bike">Choose Bicycle:</label>
+                <select id="bike" required>
+                    <option value="">Select a bicycle</option>
+                    <option value="100">Normal Bicycle - ₹100/day</option>
+                    <option value="200">Mountain Bicycle - ₹200/day</option>
+                    <option value="300">Gear Bicycle - ₹300/day</option>
+                </select>
+                <label for="days">Number of Days:</label>
+                <input
+                    type="number"
+                    id="days"
+                    min="1"
+                    max="30"
+                    required
+                    placeholder="Enter number of days">
+                <button type="submit" class="btn">
+                    Calculate Price
+                </button>
+                <button type="reset" class="btn">
+                    Clear
+                </button>
+            </form>
+            <h3 id="result">Your total price will appear here.</h3>
+        </section>
+        <section class="extra">
+            <h2>Ride With Us!</h2>
+            <svg width="120" height="80" viewBox="0 0 120 80"
+                 role="img" aria-label="Simple bicycle illustration">
+                <circle cx="25" cy="50" r="18"
+                        stroke="green" stroke-width="3" fill="none"/>
+                <circle cx="95" cy="50" r="18"
+                        stroke="green" stroke-width="3" fill="none"/>
+                <path d="M25 50 L45 20 L65 50 L25 50
+                         M45 20 L95 50 L65 50 L45 20"
+                      stroke="green" stroke-width="3" fill="none"/>
+            </svg>
+            <p>Thank you for choosing A08 Bicycle Repair and Rental Shop!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 A08 Bicycle Repair and Rental Shop. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
